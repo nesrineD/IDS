@@ -1,0 +1,31 @@
+\BOOKMARK [0][-]{chapter*.1}{List of Figures}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Intrusion detection systems \(IDS\)}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{Typical Components }{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{IDS Taxonomy}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.3}{Detection Methodologies}{section.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.3.1}{Misuse-based intrusion detection}{subsection.2.1.3}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.3.2}{Anomaly detection}{subsection.2.1.3}% 9
+\BOOKMARK [2][-]{subsection.2.1.4}{Data source locations}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Available Datasets}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{DARPA Datasets}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{KDD Dataset}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Principal Component Analysis}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Support Vector Machines}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{One Class SVM}{section.2.4}% 16
+\BOOKMARK [1][-]{section.2.5}{KMeans}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Objectives}{}% 18
+\BOOKMARK [0][-]{chapter.4}{Approach}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Data-Set Preprocessing Component}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Training Component}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Classification Component}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{Implementation}{}% 23
+\BOOKMARK [1][-]{section.5.1}{Data-Set Preprocessing Component}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{Training Component}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{Classification Component}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Dataset Used}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{Evaluation}{chapter.6}% 29
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 30
+\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 31

@@ -1,0 +1,16 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Taxonomy of intrusion detection systems\relax }}{3}{figure.caption.3}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces TCP Header\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Network based IDS architecture \cite {guide}\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces DARPA'$99$ simulation network architecture\relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Linear Support Vector Machines \cite {SvmSlides}\relax }}{10}{figure.caption.10}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectural Design of IDS system \cite {Manandhar:TowardsPracticalAnomalyBasedIDS}\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Activity diagram describing the workflow of data-set preprocessing component\relax }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Activity diagram describing the training process of training component\relax }}{16}{figure.caption.13}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Activity diagram describing the validation process of training component\relax }}{18}{figure.caption.14}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

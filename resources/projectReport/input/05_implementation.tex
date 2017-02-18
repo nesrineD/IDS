@@ -1,0 +1,28 @@
+\chapter{Implementation}
+\label{implementation}
+
+	Based on the approach of the authors explained in previous chapter, the implementation of the IDS system also consists of three parts, namely the implementation of data-set preprocessing component, training component, as well as classification component.\ The subsequent sections explain how each of these components are implemented and describe as well as explain any necessary changes which are made to the initial approach.
+
+	\section{Data-Set Preprocessing Component}
+	\label{dataSetPreprocessingComponent}
+		
+		The data-set preprocessing component is implemented to not only read the \textit{pcap\footnote{Pcap (packet capture) files are files that contains captured network traffic in form of network-packets.}} files from DARPA'$99$ data-sets but also to extract necessary relevant packet-headers from each network-packet in order to build feature vectors.\ Reading pcap files is assisted by the $Java$ library \textit{Pcap4J\footnote{Pcap4J is a $Java$ library that is able to work with different aspects of network-packet, including capturing, crafting and sending the network-packets.\ Homepage of Pcap4J: \url{http://www.pcap4j.org}}}, which is also able to extract the packet-header information.\ The extracted packet-header information is saved to the corresponding MySQL database, using the $Java$ standard SQL library.
+
+		 As soon as all packet-header information is saved to the database, an aggregation of network-packets into TCP sessions is performed.\ This aggregation process is done by the means of SQL-aggregation query.\ Following the aggregation process is the dimension reduction of the feature vectors with the aids of PCA.\ However, due to lack of both know-how and experience as well as time limitation of this project, the authors decided to skip the dimension reduction process and proceeded with clustering process.\ Another reason to skip the PCA part is that the initial implementation of the dimension reduction process yields results that the authors are unable to understand and explain.\ Moreover, after several iterations of tests, the PCA part is determined to produce non-deterministic output which further encourages the authors to remove the dimension reduction process from the IDS system.\ By skipping the PCA part, the next step in the workflow is the training process which is handled by the training component.
+		 
+		 
+	\section{Training Component}
+	\label{trainingComponent}
+		
+		Building the initial as well as the final IDS model is the function of the training component.\ This component performs two main processes, namely the clustering process and the one-class SVM model building process, both of which are the core of the whole training as well as validation process.
+
+		Clustering process is performed using k-means method with the help of \textit{Weka\footnote{Weka is a $Java$ library that contains a collection of machine learning algorithms such as PCA, K-means, as well as SVM.\ Homepage of Weka: \url{http://www.cs.waikato.ac.nz/~ml/weka/}}} library.\ Based on the work of Manandhar \cite{Manandhar:TowardsPracticalAnomalyBasedIDS}, the optimal cluster size for the DARPA'$99$ data-sets is three clusters, which is also the settings the authors agreed upon.\ Afterwards, the data-set preprocessing component calculate the Euclidian distance of each data-point in the training data-set to all three cluster centroids.\ As a result, each data-point contains three different distance measures, which are then utilised to build an initial IDS model.
+		
+		The one-class SVM takes the three distance measures of each data-point as input and constructs an IDS model which can be used as the classifier.\ Similar to k-means, the configuration of one-class SVM ($gamma$, $nu$, and $degree$) is also taken from the work of Manandhar \cite{Manandhar:TowardsPracticalAnomalyBasedIDS}.
+		
+		Based on the initial IDS model, the validation process is started by extracting building feature vectors from the validation data-set, followed by Euclidian-distance calculation of each validation data-point to the cluster centroids that are already built in the training process.\ Subsequently, the distance measures are used as input for the one-class SVM to classify the validation data-point.\ Every validation data-point that is classified as 'normal' and are actually normal (true negative), is collected and further utilised by the one-class SVM as the final IDS model.
+		
+	\section{Classification Component}
+	\label{classificationComponent}
+		 
+		 As the name already suggests, the classification component is responsible for classifying a new data-point.\ This is done by utilising the final IDS Model supplied by the training component.\ Since the final IDS model contains only information about cluster distances, the IDS system has to trace back the data-point to the original aggregated TCP-session which contains valuable information necessary for the final output (alerts).\ Fortunately, the implemented IDS system works by preserving order of the data-points.\ Thus, the index of the final IDS model can be utilised to trace back to the original TCP-session contained in the database.\ Furthermore, the index makes it also possible to retrieve (available) labelling of the data-point so that performance statistics can be collected for the evaluation purposes.

@@ -1,0 +1,72 @@
+%############################################################################
+%########################### Change This ####################################
+%############################################################################
+%put your title here
+\newcommand{\trtitle}{Outlier Intrusion Detection System}
+%replace with "Bachelor Thesis", "Master Thesis" or "Diplomarbeit"
+\newcommand{\trtype}{Intelligente Sicherheit in Netzwerk (InSiN) Project Report}
+%your name
+\newcommand{\trauthor}{Alwin Alwin, Dmytro Gerasymchuk, \\ Evgeny Bardin, Nesrine Doghri}
+% your matrikelnummer
+\newcommand{\trmatrikelnummer}{309736}
+%supevisor
+\newcommand{\trbetreuerA}{Dr.-Ing. Karsten Bsufka}
+%estimator 1
+\newcommand{\trguta}{Prof.\ Dr.\ Dr.\ h.\ c.\ Sahin Albayrak}
+%estimator two
+\newcommand{\trgutb}{Prof.\ Dr.\ habil.\ Odej Kao}
+\newcommand{\trdate}{\today}
+
+%############################################################################
+%########################### DO NOT touch this, unless you need to ##########
+%############################################################################
+\thispagestyle{empty}
+%head line logo + tub + logo
+\begin{tabular}{lcc}
+\includegraphics[width=0.15\textwidth]{template/TUBerlin_Logo_rot_hell}& \hspace{1.1cm} Technische Universit{\"a}t Berlin& \hspace{1.2cm} \includegraphics[width=0.15\textwidth]{template/aot_logo}\\
+\end{tabular}
+%draw a line
+\rule{\textwidth}{0.4pt}
+%aub: remove this on final submission
+
+%vertical space
+\vspace{2.5cm}
+\begin{center}
+%replace this
+  \textbf{\LARGE \trtitle}
+\end{center}
+\vspace{2cm}
+
+\begin{center}
+  \textbf{\trtype} \\
+  Fachgebiet Agententechnologien in betrieblichen Anwendungen und der Telekommunikation (AOT)\\
+  Prof.\ Dr.\ Dr.\ h.\ c.\ Sahin Albayrak \\
+  Fakult{\"a}t IV Elektrotechnik und Informatik \\
+  Technische Universit{\"a}t Berlin \\[0.5cm]
+  submitted by \\
+  \textbf{\trauthor}
+\end{center}
+
+\vspace{0.005cm}
+
+\begin{center}
+	\textbf{Group-03}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\begin{tabular}{ll}
+Supervisor:& \trbetreuerA\\
+\end{tabular}
+\end{center}
+
+\vfill
+
+\begin{tabular}{l}
+\trauthor \\
+\end{tabular}
+
+\rule{\textwidth}{0.4pt}
+
+\clearpage

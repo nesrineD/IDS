@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: projectReport.aux
+The style file: plain.bst
+Database file #1: input/mybib.bib
+Repeated entry---line 114 of file input/mybib.bib
+ : @article{Denning:IntrusionDetectionModel
+ :                                         ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "BSI" isn't style-file defined
+--line 140 of file input/mybib.bib
+Warning--string name "apr." is undefined
+--line 188 of file input/mybib.bib
+Warning--entry type for "SvmSlides" isn't style-file defined
+--line 191 of file input/mybib.bib
+I was expecting a `,' or a `}'---line 254 of file input/mybib.bib
+ :      
+ :      note = "Presented at ICDM Workshop on Data Mining for Computer Security, Melbourne, FL,      November 19, 2003"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in BSI
+Too many commas in name 1 of "P. Garcia-Teodoro, J.Diaz-Verdejo, G. Macia-Fernandez, E.Vazquez" for entry AnomalyBasedNID
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in guide
+Name 1 in "Richard Lippmann, Joshua W. Haines, David J. Fried, Jonathan Korba, and Kumar Das" has a comma at the end for entry DARPAEvaluation
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Richard Lippmann, Joshua W. Haines, David J. Fried, Jonathan Korba, and Kumar Das" for entry DARPAEvaluation
+while executing---line 1049 of file plain.bst
+Name 1 in "Mahbod Tavallaee, Ebrahim Bagheri, Wei Lu, and Ali A. Ghorbani" has a comma at the end for entry Mahbod:KDD
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Katherine A., Heller Krysta M., Svore Angelos D., Keromytis Salvatore and J. Stolfo" for entry Katherine:OCSVM
+while executing---line 1049 of file plain.bst
+Warning--empty author in guide
+Warning--empty year in guide
+Warning--can't use both author and editor fields in Nello:Svm
+Warning--empty journal in ComparativeStudy
+Too many commas in name 1 of "Katherine A., Heller Krysta M., Svore Angelos D., Keromytis Salvatore and J. Stolfo" for entry Katherine:OCSVM
+while executing---line 1090 of file plain.bst
+Name 1 in "Mahbod Tavallaee, Ebrahim Bagheri, Wei Lu, and Ali A. Ghorbani" has a comma at the end for entry Mahbod:KDD
+while executing---line 1090 of file plain.bst
+Warning--can't use both author and editor fields in Tom:MachineLearning
+Too many commas in name 1 of "P. Garcia-Teodoro, J.Diaz-Verdejo, G. Macia-Fernandez, E.Vazquez" for entry AnomalyBasedNID
+while executing---line 1090 of file plain.bst
+Name 1 in "Richard Lippmann, Joshua W. Haines, David J. Fried, Jonathan Korba, and Kumar Das" has a comma at the end for entry DARPAEvaluation
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Richard Lippmann, Joshua W. Haines, David J. Fried, Jonathan Korba, and Kumar Das" for entry DARPAEvaluation
+while executing---line 1090 of file plain.bst
+Warning--empty journal in pca
+(There were 12 error messages)

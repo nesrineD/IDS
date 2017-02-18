@@ -1,0 +1,27 @@
+\chapter{Results}
+\label{results}
+
+	Following the development process of the IDS system, an experiment was conducted in order to be able to objectively evaluate the performance of the IDS system.\ The evaluation process begins by choosing the (testing) data-set as input for the one-class SVM who is performing the classification based on the final IDS model.\ During the classification, several performance statistics such as \textit{true-positives\footnote{True-positives (TP) are data-points which are classified as anomalies and are actually anomalies.}}, \textit{true-negatives\footnote{True-negatives (TN) are data-points which are classified as normal and are actually normal.}}, \textit{false-positives\footnote{False-positives (FP) are data-points which are classified as anomalies but are actually normal.}}, \textit{false-negatives\footnote{False-negatives (FN) are data-points which are classified as normal but are actually anomalies.}}, as well as combinations of these measures, i.e. \textit{precision\footnote{$Precision = TP / (TP + FP)$}}, and \textit{recall\footnote{$Recall = TP / (TP + FN)$}}.\ This chapter explains the data-set that was chosen for the experiment and the evaluation result of the experiment.
+
+	\section{Dataset Used}
+	\label{datasetUsed}
+	
+		The publicly available DARPA'$99$ data-set is chosen for the experiment since this data-set is a widely popular benchmark for IDS and, thus, allows for comparison to other IDS-research works \cite{Manandhar:TowardsPracticalAnomalyBasedIDS}.\ As mentioned before in Chapter~\ref{background}, the DARPA'$99$ data-set consists of five weeks of data, where each week contains five days of collected network traffic.\ The conducted experiment works with three weeks of data, namely the first week, the fourth week and the fifth week as the training, validation and testing (classification) data-sets respectively.\ Since the first week data-set contains no attacks, it is most suitable to be used for the IDS training process, whereas the fourth as well as the fifth week data-sets contain attacks and are therefore used for validation and testing (classification) process.
+		
+		\subsubsection*{Labelling Attacks}
+		\label{labellingAttacks}
+			 In order for the developed IDS system to function properly, every attacks in the fourth and fifth week data-sets have to be labeled accordingly.\ The labelling of attacks in the data-sets serves the purpose of being able to evaluate the detection rate of IDS systems since otherwise the true-positives, true-negatives, false-positives, as well as false-negatives can not be determined.\ Unfortunately the search for such (machine-readable) labelling does not yield any promising results.\ This means that the validation process of the IDS system may produce non-ideal (potentially weak) final IDS model due to the fact that, without proper attacks labelling, the validation process might include false negatives (instead of only true-negatives) into the final IDS model.\ Additionally and most importantly, the evaluation process of the IDS system is also compromised.
+
+		\subsubsection*{Partially Labelled Attacks}
+		\label{partiallyLabelledAttacks}
+		
+			Nevertheless, the work of Manandhar \cite{Manandhar:TowardsPracticalAnomalyBasedIDS} also provides several SQL-scripts for attacks labelling.\ However, despite of identical database-structure, the SQL-scripts fails to label the attacks.\ Further analysis of the problem shows that the SQL-labelling-scripts contains time-offset.\ Consequently, the time-offset is readjusted\footnote{The time-offset readjustment is performed by adding $6$ hours of the \textit{packet-time} to each packet's time-stamp.} back to fit the original time-zone of the DARPA'$99$ data-sets.
+			
+			Even after the time-offset was readjusted, some of the SQL-labelling-scripts still can not label the attacks properly, for example the fourth week-labelling-script fails to label any attacks.\ Therefore, the SQL-labelling-scripts only work partially on the fifth week data-set.\ More precisely, only $63\%$ of $1000$ SQL-labelling-commands in the fifth week data-set is properly executed, which amounts to $159000$ successfully labelled attacks.
+
+	\section{Evaluation}
+	\label{evaluation}
+
+		Testing the developed IDS system on the partially-labeled fifth week of DARPA'$99$ data-set yields a recall rate of $100\%$ and $30\%$ precision which is satisfying nevertheless since the high recall rate is the aim of the IDS system's architectural design \cite{Manandhar:TowardsPracticalAnomalyBasedIDS}.\ Moreover, with proper and complete attacks-labelling, a much higher precision rate can be achieved.
+		
+		It is also to be noted that the sensible IDS-system that achieves high detection rate always make the trade-off of having high false-positives as well, as in the developed IDS system within this project.\ In order to verify and/or estimate the false positive rate, the developed IDS system is given the first week of DARPA'$99$ data-set, which contains no attacks.\ As a result, $80\%$ of the data-points are labelled as normal, where as the rest were mis-labelled as anomalies, which corresponds to approximately $20\%$ false-positives.

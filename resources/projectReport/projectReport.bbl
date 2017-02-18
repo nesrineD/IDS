@@ -1,0 +1,103 @@
+\begin{thebibliography}{10}
+
+\bibitem{guide}
+Intrusion detection systems buyer guide.
+\newblock Technical report, ICSA Labs.
+
+\bibitem{BSI}
+Einfuehrung von intrusiondetection-systemen, grundlagen, 2002.
+
+\bibitem{Nello:Svm}
+Nello Cristianini and John Shawe-Taylor.
+\newblock {\em An Introduction to Support Vector Machines and Other
+  Kernel-based Learning Methods}.
+\newblock 0070428077. The Press Syndicate at the University of Cambridge, March
+  2000.
+
+\bibitem{Denning:IntrusionDetectionModel}
+Dorothy~E. Denning.
+\newblock An intrusion-detection model.
+\newblock {\em IEEE Trans. Softw. Eng.}, 13(2):222--232, February 1987.
+
+\bibitem{ComparativeStudy}
+Farnaz Gharibian and Ali~A. Ghorbani.
+\newblock Comparative study of supervised machine learning techniques for
+  intrusion detection.
+\newblock 2007.
+
+\bibitem{DARPACritique}
+John~Mc Hugh.
+\newblock Testing intrusiondetection systems: Acritique of the 1998 and 1999
+  darpa intrusion detection systemevaluations as performed by lincoln
+  laboratory.
+\newblock {\em ACM Transactions Information System Security}, 3(4):262--294,
+  Nov 2000.
+
+\bibitem{Katherine:OCSVM}
+Svore Angelos D. Keromytis~Salvatore Katherine~A., Heller Krysta~M. and
+  J.~Stolfo.
+\newblock One class support vector machines for detecting anomalous windows
+  registry accesses.
+\newblock {\em ICDM Workshop on Data Mining for Computer Security, Melbourne,
+  FL}, 2003.
+
+\bibitem{Mahbod:KDD}
+Wei~Lu Mahbod~Tavallaee, Ebrahim~Bagheri and Ali~A. Ghorbani.
+\newblock A detailed analysis of the kdd cup 99 data set.
+\newblock {\em IEEE Symposium on Computational Intelligence in Security and
+  DEfence Applications}, 2009.
+
+\bibitem{Manandhar:TowardsPracticalAnomalyBasedIDS}
+Prajowal Manandhar and Zeyar Aung.
+\newblock Towards practical anomaly-based intrusion detection by outlier mining
+  on tcp packets.
+\newblock In Hendrik Decker, Lenka Lhotsk{\'a}, Sebastian Link, Marcus Spies,
+  and Roland~R. Wagner, editors, {\em Database and Expert Systems
+  Applications}, volume 8645 of {\em Lecture Notes in Computer Science}, pages
+  164--173. Springer International Publishing, 2014.
+
+\bibitem{Larry:OCSVM}
+Larry~M. Manevitz and Malik Yousef.
+\newblock One-class svms for document classification.
+\newblock {\em Journal of Machine Learning Research}, 2:139--154, 2001.
+
+\bibitem{McHugh:IntrusionAndIntrusionDetection}
+John McHugh.
+\newblock Intrusion and intrusion detection.
+\newblock {\em International Journal of Information Security}, 1(1):14--35,
+  2001.
+
+\bibitem{Tom:MachineLearning}
+Tom~M. Mitchell.
+\newblock {\em Machine Learning}.
+\newblock 0070428077. McGraw-Hill Science / Engineering / Math, March 1997.
+
+\bibitem{SvmSlides}
+Andrew~W. Moore.
+\newblock Support vector machines, Nov 2001.
+
+\bibitem{AnomalyBasedNID}
+G.~Macia-Fernandez~E.Vazquez P.~Garcia-Teodoro, J.Diaz-Verdejo.
+\newblock Anomaly-based network intrusion detection: Techniques, systems and
+  challenges.
+\newblock {\em computers and security}, 2009.
+
+\bibitem{DARPAEvaluation}
+David J. Fried Jonathan~Korba Richard~Lippmann, Joshua W.~Haines and Kumar Das.
+\newblock Analysis and results of the 1999 darpa off-line intrusion detection
+  evaluation.
+\newblock {\em Springer-Verlag Berlin Heidelberg}, 2000.
+
+\bibitem{silhouette}
+Peter~J. ROUSSEEUW.
+\newblock Silhouettes: a graphical aid to the interpretation and validation of
+  cluster analysis.
+\newblock {\em Journal of Computational and Applied Mathematics}, 20:53--65,
+  1986.
+
+\bibitem{pca}
+Martin Sewell.
+\newblock Principal component analysis.
+\newblock 2007.
+
+\end{thebibliography}
